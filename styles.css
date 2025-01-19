@@ -1,0 +1,397 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #101820;
+            color: #fff;
+        }
+
+        header {
+            background: #FEE715;
+            
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            margin-left: 90px;
+            height: 65px;
+            width: 100;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #ff9800;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 30px auto;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        form input, form button {
+            width: 95%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        form input {
+            background-color: #555;
+            color: #fff;
+        }
+
+        .comment-input{
+            resize: none;
+    height: 100px;
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+        }
+
+        form button {
+
+            width: 30%;
+            background: #FEE715;
+            color: #000;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        form button:hover {
+            background: linear-gradient(to right, #FEE715, #ff9800 );    
+                }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .contact-info p {
+            margin: 10px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .social-links a {
+            margin: 0 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            form {
+                padding: 15px;
+            }
+        }
+
+
+        
+/* hover and redirect to review wala section*/
+
+.movie-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px; /* Space between cards */
+    padding: 40px;
+    max-width: 1200px;
+    margin: auto;
+
+.movie-card {
+    align-self: auto;
+    width: 250px;
+  text-align: center;
+  border: 1px solid #333; /*  dark theme */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: ##edd2a4; /*  lighter than background */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.movie-card:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Soft glow */
+}
+
+.movie-card img {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #f5ba13; /* Movie title in gold */
+}
+
+.movie-card .reviewer {
+  font-size: 0.8rem;
+  color: #aaa; 
+  margin: 0;
+}
+
+.movie-card .stars {
+  font-size: 1.rem;
+  color: gold;
+  margin: 10px 0;
+}
+
+
+
+/* review settings lik:*/
+  
+        /* Body Styling */
+       
+
+      
+            }
+
+        /* Title Styling */
+        .review-container h1 {
+            font-size: 36px;
+            color: #ff9800; /* Accent color */
+            margin-bottom: 10px;
+            text-align: center; /* Center title text */
+        }
+            .review-container img{
+                margin-left: 34%;
+            }
+
+        /* Meta Section */
+        .line {
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center meta info */
+            gap: 10px;
+            font-size: 14px;
+            margin-bottom: 15px;
+           
+        }
+
+        .line .rating {
+            font-size: 18px;
+            color: #ffcc00; /* ( stars */
+        }
+
+        .line  {
+            /* Tag background */
+            color: #000;
+            
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: bold;
+            
+        }
+
+        .genrebtn{
+            padding: 5px;
+             color: #000;
+            background-color: #FEE715;
+            border-radius: 10px;
+            font-size: 12px;
+            font-weight: bold;
+
+        }
+
+.genrebtn:hover{
+    background: linear-gradient(to right, #FEE715, #ff9800 );
+}
+        /* fro button*/
+        
+
+        .line .details {
+            font-size: 14px;
+            color: #ccc; 
+        }
+
+        /* Author Section */
+        .author {
+            font-size: 14px;
+            color: #ccc; /* . .  */
+            margin-bottom: 20px;
+            text-align: center; /*  author info */
+        }
+
+        /* Image Styling */
+        .movie-image{
+        
+            width:30%;
+            height:30%;
+             }
+
+        /* Description Text */
+        .description {
+
+            border: 20px;
+            
+            border-color: transparent;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+/* comment for all pagees */
+
+
+
+.comment-container {
+    margin-left: 26%;
+    text-align: center;
+    padding: 20px 40px;
+      border-radius: 10px;
+   
+     width: 90%;
+    max-width: 500px;
+  }
+
+  .comment-container h2 {
+    color: #ff9800;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+
+  
+
+  .comment-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+
+  }
+
+  .comment-form input,
+  .comment-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #444;
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .comment-form textarea {
+    resize: none;
+    height: 100px;
+}
+
+  .comment-form button {
+    background: #FEE715;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .comment-form button:hover {
+    background: linear-gradient(to right, #FEE715, #ff9800 );
+  }
+
+
+
+.recommendations h2{
+    color: #ff9800 ;
+}
+
+.linksheading h2{
+    color: #ff9800;
+}
+
+
+
+.about-details h3{
+    color: #ff9800 ;
+}

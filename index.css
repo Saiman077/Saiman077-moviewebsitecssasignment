@@ -1,0 +1,208 @@
+body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1e1e1e;
+            color: #fff;
+        }
+
+          header {
+            background: linear-gradient(to right, #ff9800, #f44336);
+            padding: 20px 10px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff9800;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+            color: #ff9800;
+        }
+
+
+.movie-grid {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+
+.movie-card {
+    align-self: auto;
+    width: 250px;
+  text-align: center;
+  border: 1px solid #333; /* Adjusted to match the dark theme */
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: #1e1e1e; /* Slightly lighter than background */
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.movie-card:hover {
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); /* Soft glow */
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.movie-card h3 {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #f5ba13; /* Movie title in gold */
+}
+
+.movie-card .reviewer {
+  font-size: 0.8rem;
+  color: #aaa; /* Muted reviewer name */
+  margin: 0;
+}
+
+.movie-card .stars {
+  font-size: 1.rem;
+  color: gold;
+  margin: 10px 0;
+}
+
+/* Responsive Design */
+footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            margin-top: 20px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            form {
+                width: 90%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            form {
+                padding: 15px;
+            }
+        }
+
+        /* comment for index page only*/
+
+
+.comment-section {
+    text-align: center;
+    padding: 2rem;
+    background-color: #181818;
+  }
+
+  .comment-section h2 {
+    color: #ff9800;
+    margin-bottom: 1.5rem;
+  }
+
+  .comment-form {
+    border: 100%;
+
+    max-width: 100%;
+    margin:  auto;
+    background: #282828;
+    padding: 2rem;
+    border-radius: auto;
+    box-shadow:  auto6px rgba(0, 0, 0, 0.1);
+  }
+
+  .comment-form label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+  }
+
+  .comment-form input,
+  .comment-form textarea {
+    width: 95%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+    background-color: #333;
+    color: #333;
+  }
+
+  .comment-form input::placeholder,
+  .comment-form textarea::placeholder {
+    color: #333;
+  }
+
+  .comment-form button {
+    width: 100%;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    color: #fff;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  .comment-form button:hover {
+    background: linear-gradient(90deg, #ff5722, #ff9800);
+  }

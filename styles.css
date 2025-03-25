@@ -7,13 +7,13 @@ body {
         }
 
         header {
-            background: #FEE715;
+            background: #FEE715 ;
             
             position: sticky;
             top: 0;
             z-index: 1000;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-        }
+        }   
 
         header img {
             margin-left: 90px;
@@ -310,7 +310,8 @@ body {
 
         /* Description Text */
         .description {
-
+            text-align: left;
+            margin-inline: 200px;
             border: 20px;
             
             border-color: transparent;
@@ -384,6 +385,12 @@ body {
 
 .recommendations h2{
     color: #ff9800 ;
+
+}
+
+.recommendations{
+     text-align: left;
+            margin-inline: 200px;
 }
 
 .linksheading h2{
